@@ -1,0 +1,447 @@
+:root {
+  --clr--primary: #1963ca;
+  --clr--gradiant: linear-gradient(to left, #3a7bd5, #00d2ff);
+
+  --ff--primary: 'Roboto', sans-serif;
+  --ff--headings: 'PlayFair Display', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff--primary);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+section {
+  margin: 5% 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff--headings) !important;
+  color: rgb(3, 47, 109);
+}
+
+h1 {
+  padding: 0 0 2rem 0;
+}
+
+h2 {
+  padding: 0 0 1rem 0;
+}
+h3 {
+  padding: 0 0 1rem 0;
+}
+h4 {
+  padding: 0 0 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+
+.text-div-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+/* HEADER */
+
+#navLinkDiv a {
+  margin-left: 20px;
+}
+#navLogo {
+}
+
+#navbar {
+  color: white;
+  position: absolute;
+  z-index: 999;
+  width: '100%';
+  background-color: transparent;
+
+  box-shadow: none;
+}
+
+.landingImgDiv {
+  height: 80vh;
+  width: 100%;
+  /* fallback for old browsers */
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 210, 255, 0.8),
+      rgba(3, 62, 143, 0.8)
+    ),
+    url('./images/landingImg2.jpg');
+
+  background-position: -50% 25%;
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: relative;
+}
+
+.landingImgDiv h2 {
+  color: white;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+.landingImgDiv h5 {
+  color: white;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+.landingImg {
+  width: 55%;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 1001;
+  display: none;
+}
+
+.landingTextDiv {
+  margin: 15% 0 0 15%;
+  height: 100%;
+}
+#landingsvg {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0;
+}
+
+/* O nama */
+#onamaImg {
+  border-radius: 10%;
+}
+
+.textDiv {
+  padding-left: 2rem;
+  color: var(--clr--primary);
+}
+.btn {
+  background: var(--clr--primary) !important;
+  color: white !important;
+  margin: 20px 0 0 0 !important;
+  padding: 10px 20px !important;
+  border-radius: 25px !important;
+}
+
+/* Usluge */
+
+.cardContainer {
+  margin-bottom: 2rem;
+  height: 350px;
+  width: 90%;
+  max-width: 600px;
+
+  /* svaki ima pojedinacan props boju. */
+  /* background: #00d2ff;
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+  background: linear-gradient(to right, #3a7bd5, #00d2ff); */
+
+  border-radius: 25px;
+  /* background-image: url('./images/proteza.png'); */
+  transition: ease-in-out 0.3s all;
+  -webkit-box-shadow: 0px 3px 16px 0px rgba(71, 67, 71, 1);
+  -moz-box-shadow: 0px 3px 16px 0px rgba(71, 67, 71, 1);
+  box-shadow: 0px 3px 16px 0px rgba(71, 67, 71, 1);
+}
+.cardContainer:hover {
+  -webkit-box-shadow: 0px 3px 33px 0px rgba(20, 58, 66, 1);
+  -moz-box-shadow: 0px 3px 33px 0px rgba(0, 210, 255, 1);
+  box-shadow: 0px 3px 33px 0px rgba(0, 210, 255, 1);
+}
+.uslugeDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cardImgDiv {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.cardImgDiv img {
+  height: auto;
+  max-height: 100%;
+  width: 50%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.cardTextDiv {
+  padding: 2rem 0 0 2rem;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex;
+  z-index: 2;
+}
+.cardTextDiv > h4 {
+  color: white;
+}
+.cardTextDiv > h6 {
+  color: white !important;
+  padding: 1rem 0 !important;
+}
+.btn-usluge {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  color: white !important;
+  font-size: 1rem !important;
+  border-radius: 25px !important;
+  padding: 10px 20px !important;
+  /* margin-top: 2rem !important; */
+}
+.btn-usluge:hover {
+  opacity: 0.7;
+}
+
+#uslugesvg {
+  z-index: -1;
+  position: absolute;
+  height: 70%;
+  width: 40%;
+  bottom: 5%;
+  left: -35%;
+  background-color: var(--clr--primary);
+  border-radius: 100%;
+}
+#uslugesvg1 {
+  z-index: -1;
+  position: absolute;
+  height: 70%;
+  width: 40%;
+  bottom: 35%;
+  right: -35%;
+  background-color: var(--clr--primary);
+  border-radius: 100%;
+}
+#uslugesvg2 {
+  z-index: -1;
+  position: absolute;
+  height: 40%;
+  width: 39%;
+  bottom: 0%;
+  right: -36%;
+  background-color: var(--clr--primary);
+  border-radius: 100%;
+}
+/* Contact US */
+
+s label {
+  font-size: inherit !important;
+}
+input {
+  /* border-bottom: 2px solid var(--clr--primary) !important; */
+  font-size: inherit;
+}
+::placeholder {
+  color: blue !important;
+}
+.MuiInput-underline:before {
+  border-bottom: 1px solid var(--clr--primary) !important;
+}
+.MuiFormControl-root {
+  margin-bottom: 1.5rem !important;
+}
+/* FOOTER */
+footer {
+  background-color: var(--clr--primary);
+  padding: 2rem 0;
+
+  color: white;
+
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 210, 255, 0.5),
+      rgba(3, 62, 143, 0.5)
+    ),
+    url('./images/bg.jpg');
+  background-size: cover;
+  background-position: -30% 36%;
+}
+
+.footerDiv {
+  z-index: -1;
+  width: 100%;
+  /* background-color: var(--clr--primary); */
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  line-height: 2em;
+}
+footer li:hover {
+  color: #00d2ff;
+}
+
+/* OBLASTI */
+.oblatiStranaContainer {
+  height: 100vh;
+  width: 100%;
+
+  transition: ease-in-out 0.3s all;
+
+  /* -webkit-box-shadow: 0px 3px 16px 0px rgba(71, 67, 71, 1);
+  -moz-box-shadow: 0px 3px 16px 0px rgba(71, 67, 71, 1);
+  box-shadow: 0px 3px 16px 0px rgba(71, 67, 71, 1); */
+}
+
+.obastiStranaTextDiv {
+  padding: 10% 10%;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex;
+  transform: translateX(-20%);
+  transition: ease-in 0.6s all;
+  z-index: 2;
+  opacity: 0;
+}
+.obastiStranaTextDiv h3,
+.obastiStranaTextDiv h5 {
+  color: white;
+}
+.oblastiStranaImgDiv {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.oblastiStranaImgDiv img {
+  height: auto;
+  max-height: 100%;
+  width: 50%;
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  transition: ease-in 0.6s all;
+  opacity: 0;
+  z-index: 1;
+}
+
+i {
+  padding-right: 10px;
+}
+
+/* CONTACT PAGE */
+
+.allPageLandingImg {
+  min-height: 50vh;
+  width: 100%;
+  /* fallback for old browsers */
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 210, 255, 0.6),
+      rgba(4, 47, 107, 0.6)
+    ),
+    url('./images/landingImg2.jpg');
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  /* background-position: -30% 36%; */
+}
+.allPageLandingTextDiv {
+  margin: 15% 0;
+  width: 100%;
+  transform: translateX(-20%);
+  transition: ease-in 0.6s all;
+  opacity: 0;
+}
+.allPageLandingTextDiv h2,
+.allPageLandingTextDiv h5 {
+  color: white;
+}
+
+.contactGrid a {
+  padding-right: 5%;
+  color: rgba(3, 62, 143, 0.8);
+}
+
+.contactGrid i {
+  color: rgba(3, 62, 143, 0.8);
+  line-height: 3rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1099px) {
+  .landingImg {
+    display: none;
+  }
+  #navbar {
+    position: static;
+    background-color: #f5f5f5;
+    color: #1963ca !important;
+  }
+  #navbar h1 {
+    color: #1963ca !important;
+  }
+  .textDiv {
+    padding-left: 0;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .oblatiStranaContainer {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cardContainer {
+    width: 100%;
+  }
+  .cardTextDiv {
+    z-index: 2;
+  }
+  .cardImgDiv img {
+    z-index: 1;
+    display: none;
+  }
+  .cardContainer {
+    height: auto;
+  }
+  .landingTextDiv h2 {
+    font-size: 3rem;
+  }
+
+  .landingTextDiv h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 0.8rem;
+  }
+}
